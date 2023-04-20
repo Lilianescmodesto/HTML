@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrin-to=no">
+	<link rel="stylesheet" type="text" href="formulario" media="screen">
+	<title>Cadastro</title>
+	</head>
+	<body>
+		<div>
+		<h1 id="titulo">Cadastro de Candidato</h1>
+		<p id="Subtitulo">Preencha com seus Dados</p>
+		<br></div>
+		<form>
+		<fieldset class="grupo">
+			<div class="campo">
+				<label for="name"> <strong>Nome</strong></label>
+				<input type="text" name="nome" id="nome" required>
+			</div>
+			<div clas="campo">
+				<label for="Sobrenome"><strong>Sobrenome</strong></label>
+			
+			<input type="text" name="sobrenome" id="sobrenome" required>
+		</div>
+		<div clas="campo">
+				<label for="telfone"><strong>telefone</strong></label>
+			
+			<input type="text" name="telefone" id="telefone" required>
+		</div>
+ 
+	<div class="campo">
+	<label for="email"><strong>Email</strong></label>
+	<input type="email" name="email" id="email" required></div>
+	<div class="campo"></div></fieldset>
+	<label><strong>Qual animal você tem interesse em adotar?</strong></label>
+	<label>
+		<input type="radio" name="animal" value="cachorro">Cachorro</label>
+		<input type="radio" name="animal" value="gato"> Gato</label>
+		<input type="radio" name="animal" value="Hamster"> Hamster</label>
+		<input type="radio" name="animal" value="Coelho"> Coelho</label>
+	</div><br><br>
+	<label><strong>Você já é tutor de algum animal?</strong></label>
+	<label>
+		<input type="radio" name="sim" value="Sim">Sim</label>
+		<input type="radio" name="nao" value="nao">Não</label>
+		<br><br>
+    <div class="Campo">
+    <label for="Quantidade"><strong>Selecione a quantidade de animais que pretende adotar</strong></label>
+    <select id="Quantidade" required>
+    	<option>1</option>
+    	<option>2</option>
+    	<option>3</option>
+    	<option>4</option></select>
+     </div>	<br><br>
+<fieldset class="grupo">
+	<div id="check">
+		<label><strong>Selecione os pré requisitos que possui</strong></label><br><br>
+		<input type="checkbox" id="requisito1" name="requisito1" value="Espaço adequado"> 
+        <label for="requisito1">Espaço adequado</label> 
+        <input type="checkbox" id="requisito2" name="requisito2" value="Tempo para passeio"> 
+        <label for="requisito2">Tempo para passeio</label>
+        <input type="checkbox" id="requisito3" name="requisito3" value="Recursos para alimentação adequada"> 
+        <label for="requisito3">Recursos para alimentação adequada</label>
+        <input type="checkbox" id="requisito4" name="requisito4" value="Recursos para consulta com veterinário"> 
+        <label for="requisito4">Recursos para consulta com Veterinário</label>
+        <input type="checkbox" id="requisito5" name="requisito5" value="Experiencia com pets"> 
+        <label for="requisito4">Experiência com Pets</label>
+        </div></fieldset>
+        <div class="campo">
+        	<br>
+        	<label for="apresentação"><strong>Conte-nos os motivos pelos quais você que adotar um animal de estimação.</strong></label><br><br>
+        	<textarea rows="6" style="width: 26 em" id="apresentação" name="apresentação"></textarea></div>
+        	<button class="botao" type="submit" onsubmit="">Concluir</button>
+           </form>
+       </body>
+</html>
